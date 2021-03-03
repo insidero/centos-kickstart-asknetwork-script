@@ -1,0 +1,1 @@
+# centos-kickstart-asknetwork-script
