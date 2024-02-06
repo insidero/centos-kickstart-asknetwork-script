@@ -27,7 +27,7 @@ echo -e "\n---------------------------------------------------------------------
 ip link show
 echo -e "\n----------------------------------------------------------------------"
 
-#Show the lisit of available network interfaces
+# List available network interfaces
 for i in `find /sys/class/net/ -type l` ;
   do 
     name=$(echo  ${i} | awk -F/ '{print $NF}'  )
@@ -54,7 +54,7 @@ if [ $ManualNetworkConfiguration = "y" ]; then
 
 
 
-#Show the list of attached network interfaces
+# List attached network interfaces
 
 echo -e "\n\n$(tput setaf 1)****************************************************************************************"
 echo -e "***WARNING: Interface name MUST belong to the list of the interfaces we have presented above. In case the interface name doesn’t belong to the list installation will Fail"
